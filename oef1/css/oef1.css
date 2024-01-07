@@ -1,0 +1,231 @@
+/*
+    blauw   0090e3
+    oranje  orange
+    geel    f0d10a
+    wit     white
+*/
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 16pt;
+}
+
+nav h1 {
+    font-size: 28pt;
+    float: left;
+    margin: 40px;
+}
+
+nav a {
+    font-size: 20pt;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+header {
+    height: 120px;
+    background-color: orange;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    font-family: monospace;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+}
+
+body > header nav ul li {
+    display: inline-block
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #0090e3;
+    border: solid white 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#winkeltekst {
+    display: none;
+}
+
+
+#orange {
+    border: solid 2px white;
+    border-radius: 15px;
+    background-color: #0090e3;
+    padding: 5px;
+
+}
+
+#blackfriday {
+    margin: 120px auto auto auto;
+    display: block;
+    width: 1200px;
+
+
+}
+
+.categorie {
+    float: left;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+.fotocategorie {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#recent {
+    margin-top: 25px;
+    width: 300px;
+}
+
+h2 {
+    font-family: Arial serif;
+    font-size: 24pt;
+    color: #0090e3;
+
+}
+
+p {
+    width: 90%;
+}
+
+.heart {
+    height: 20px;
+    position: absolute;
+    float: right;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 1;
+    padding: 2px;
+    margin-top: 20px;
+    margin-left: 152px;
+}
+
+.lego {
+    float: left;
+    margin: 0 auto;
+    margin-right: 10px;
+    border: dotted orange 3px;
+    position: relative;
+    padding: 4px;
+    border-radius: 5px;
+    width: calc(100% / 6 - 1.5%);
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header, nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    li {
+        display: flex;
+        margin: 15px;
+        text-align: center;
+    }
+
+    #blackfriday {
+        display: none;
+    }
+
+    #winkelfoto {
+        display: none;
+    }
+
+    #winkeltekst {
+        display: flex;
+    }
+
+    div:hover {
+        background-color: #f0d10a;
+    }
+
+    #removable {
+        display: none;
+    }
+
+    .categorie {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+
+    }
+
+    .recentbekeken {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categorie {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+

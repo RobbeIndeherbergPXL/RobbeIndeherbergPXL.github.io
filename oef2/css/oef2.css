@@ -1,0 +1,50 @@
+/*naam:  
+*/
+
+/*
+    blauw   0090e3
+    geel    f3f5cb
+    wit     white
+*/
+
+table, td, th{
+   border: black solid 2px;
+    border-collapse: separate;
+}
+table{
+    width: 100%;
+
+
+}
+thead{
+    color: white;
+    font-style: italic;
+    font-size: 20pt;
+    font-family: Arial serif ;
+    text-align: center;
+}
+th{
+    background-color: #0090e3;
+}
+tbody{
+    font-size: 18pt;
+    color: black;
+    font-family: monospace;
+    text-align: right;
+    margin-right: 50px;
+}
+td{
+    padding-right: 50px;
+
+}
+tr:nth-child(even){
+    background-color: #f3f5cb;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+tr:nth-child(odd) td[rowspan]{
+    background-color: #f3f5cb;
+}
+
+
